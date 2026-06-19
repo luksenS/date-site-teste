@@ -21,7 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Heart, Coffee, Film, Utensils, Clock, IceCream, Sandwich, UtensilsCrossed, Wine, Footprints, Trees, Mic2, Target, Smile, Baby } from "lucide-react";
+import { Heart, Film, Clock, IceCream, Sandwich, UtensilsCrossed, Wine, Footprints, Trees, Mic2, Target, Smile, Baby } from "lucide-react";
 import confetti from "canvas-confetti";
 import ThemedCard from "@/components/ThemedCard";
 import Sparkles from "@/components/Sparkles";
@@ -87,7 +87,7 @@ export default function EnchantingDateProposalApp() {
     if (!d) return "";
     try {
       return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
-    } catch (e) {
+    } catch (_e) {
       return d.toDateString();
     }
   };
